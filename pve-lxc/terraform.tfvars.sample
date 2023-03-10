@@ -1,0 +1,22 @@
+name = "TF_test_name"
+
+start_vm = true
+
+resources_disk_size = "20G"
+
+resources_core = "4"
+
+resources_mem = "3072"
+
+hostname = "k8s-cluster"
+
+ostemplate = "local:vztmpl/debian-11-standard_11.6-1_amd64.tar.zst"
+#ostemplate = "local:vztmpl/debian-11-turnkey-core_17.1-1_amd64.tar.gz"
+
+description = "Terraform managed"
+
+passwd_root = "cool-password"
+
+resources_ipv4_address = "192.168.250.200/24"
+
+resources_disk = "local-lvm"
