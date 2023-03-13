@@ -87,6 +87,11 @@ variable "start_at_boot" {
   description = "should start at pve boot?"
 }
 
+variable "IP1" {
+  default     = "1"
+  description = "Initial IP count"
+}
+
 variable "passwd_root" {
   default     = "cool-password"
   sensitive   = true

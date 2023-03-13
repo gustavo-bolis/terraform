@@ -10,11 +10,11 @@ resource "random_id" "name1" {
 #  byte_length = 2
 #}
 
-#locals {
-#  IP1 = 200
-#  IP2 = 201
-#  IP3 = 202
-#}
+locals {
+  IP1 = var.IP1
+  #  IP2 = 201
+  #  IP3 = 202
+}
 
 resource "proxmox_lxc" "LXC-1" {
   target_node  = var.target_pve
