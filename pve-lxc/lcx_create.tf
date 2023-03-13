@@ -28,10 +28,10 @@ resource "proxmox_lxc" "LXC-1" {
   start        = var.start_vm
   password     = var.passwd_root
 
-  features {
-    #    keyctl  = true
-    nesting = true
-  }
+  #  features {
+  #    keyctl  = true
+  #    nesting = true
+  #  }
 
   rootfs {
     storage = var.resources_disk
