@@ -1,0 +1,19 @@
+name = "TF_test_name"
+
+start_vm = true
+
+resources_disk_size = "80G"
+
+resources_core = "4"
+
+resources_mem = "4096"
+
+hostname = "TF-VM"
+
+clone= "deb11-testing"
+
+description = "Terraform Managed"
+
+passwd_root = "your-cool-pass"
+
+resources_disk = "local-lvm"
